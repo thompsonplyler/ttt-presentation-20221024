@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "mdx-deck presentation.md"
+  },
+  "devDependencies": {
+    "fusuma": "^2.8.4"
+  }
+}
