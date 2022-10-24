@@ -36,14 +36,6 @@
   z-index: 1;
 }
 
-.actual-background {
-  width: 100vw;
-  min-height: 100vh;
-  background-image: url('/seamless_cloud_1.png');
-  grid-column-start: 1;
-  grid-column-end: 2;
-  z-index: 0;
-}
 
 @keyframes gradient {
   0% {
@@ -57,4 +49,21 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+.display {
+  position: absolute;
+  border: 12px solid orange;
+  flex-direction: column;
+  top: 650px;
+  left: 10px;
+  width: 800px;
+  height: 400px;
+  color: white;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 2px black;
+  ;
 }
