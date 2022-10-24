@@ -6,9 +6,9 @@ Let's take your video to the next level!
 
 ## Prerequisites:
 
-- React/ JavaScript
+- React/ JavaScrip\*
 - OBS Studio (Mac, Windows, or Linux)
-- Some Node.js
+- Some Node.js || Node 16.x+
 
 ## This Presentation and Relevant Files:
 
@@ -18,10 +18,6 @@ http://github.com/thompsonplyler/ttt-presentation
 const thing = { key: "value" };
 console.log("Test");
 ```
-
-<!-- block-start: grid -->
-<!-- account: twitter, thompsonplyler -->
-<!-- block-end -->
 
 ---
 

@@ -1,24 +1,60 @@
 .container {
+  position: relative;
   width: 100vw;
   min-height: 100vh;
-  background: #a8c0ff;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3f2b96, #a8c0ff);
+  background: linear-gradient(-45deg, hsl(241, 75%, 40%), hsl(223, 100%, 85%), hsl(251, 75%, 40%), hsl(220, 65%, 85%));
+  background-size: 400% 400%;
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: gradient 45s ease infinite;
+  display: grid;
+  grid-template: 1fr/1fr;
 
-  display: flex;
-  align-items: flex-end;
-  justify-content: end;
 }
 
-.waves {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
-  /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 150px;
+.overlay1 {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, hsl(241, 75%, 40%), hsl(223, 100%, 85%), hsl(251, 75%, 40%), hsl(220, 65%, 85%));
+  background-size: 300% 300%;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: gradient 65s ease infinite;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  z-index: 1;
+}
+
+.overlay2 {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #fffbd5, orange, #b20a2c, lavender, pink);
+  background-size: 300% 300%;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: gradient 45s ease infinite;
+  mix-blend-mode: overlay;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  z-index: 1;
+}
+
+.actual-background {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url('/seamless_cloud_1.png');
+  grid-column-start: 1;
+  grid-column-end: 2;
+  z-index: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }

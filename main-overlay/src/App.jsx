@@ -4,7 +4,8 @@ import "./App.css";
 function App() {
   return (
     <div className="container">
-      <h1>Test</h1>
+      <div className="overlay2"></div>
+      <div className="overlay1"></div>
     </div>
   );
 }
